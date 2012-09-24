@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+C:\Users\Stefan\workspace\DAT255_AppsolutDistribute\workspace\.metadata\.plugins\org.eclipse.jdt.core
+462060917.index
+2412630086.index
+2154332513.index
+2736458872.index
