@@ -1,0 +1,99 @@
+package com.example.appsolutdistribute;
+
+import android.database.DataSetObserver;
+import android.view.Gravity;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AbsListView;
+import android.widget.AbsListView.LayoutParams;
+import android.widget.ExpandableListAdapter;
+import android.widget.BaseExpandableListAdapter;
+import android.widget.TextView;
+/**
+ * An adapter to get the expandablelistview going.
+ * @author Stefan
+ *
+ */
+public class MainsExpandableListAdapter extends BaseExpandableListAdapter {
+
+	private String[] groups = {"Parent1","Parent2","Parent3"};
+	private String[][] children ={{"Child1"},{"Child2"},{"Child3"},{"Child4"},{"Child5"}};
+	
+	public Object getChild(int groupPosition, int childPosition) {
+		// TODO Auto-generated method stub
+		//return null;
+		return children[groupPosition][childPosition];
+	}
+	public long getChildId(int groupPosition, int childPosition) {
+		// TODO Auto-generated method stub
+		//return 0;
+		return childPosition;
+	}
+	public View getChildView(int groupPosition, int childPosition,
+			boolean isLastChild, View convertView, ViewGroup parent) {
+		// TODO Auto-generated method stub
+		//return null;
+		TextView textView = getGenericView();
+		textView.setText(getChild(groupPosition,childPosition).toString());
+		
+		return textView;
+	}
+	public int getChildrenCount(int groupPosition) {
+		// TODO Auto-generated method stub
+		//return 0;
+		int i = 0;
+		try{
+			i = children[groupPosition].length;
+		}catch(Exception e){}
+		return i;
+	}
+	
+	public TextView getGenericView(){
+		// layout parameters for the ExpandableListView
+		AbsListView.LayoutParams lp = new AbsListView.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT,64);
+		TextView textView = new TextView(MainActivity.this);
+		textView.setLayoutParams(lp);
+		// center the text vertically
+		textView.setGravity(Gravity.CENTER_VERTICAL|Gravity.LEFT);
+		textView.setTextColor(R.color.red);
+		// Set the text starting position
+		textView.setPadding(36, 0, 0, 0);
+		return textView;
+		
+		return null;
+	}
+	
+	public Object getGroup(int groupPosition) {
+		// TODO Auto-generated method stub
+		//return null;
+		return groupPosition;
+	}
+	public int getGroupCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	public long getGroupId(int groupPosition) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	public View getGroupView(int groupPosition, boolean isExpanded,
+			View convertView, ViewGroup parent) {
+		// TODO Auto-generated method stub
+		//return null;
+		TextView textView = getGenericView();
+		textView.setText(getGroup(groupPosition).toString());
+		return textView;
+	}
+	public boolean hasStableIds() {
+		// TODO Auto-generated method stub
+		//return false;
+		return true;
+	}
+	public boolean isChildSelectable(int groupPosition, int childPosition) {
+		// TODO Auto-generated method stub
+		//return false;
+		return true;
+	}
+	
+
+}
