@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ConnectToServer">
+        <item>Login</item>
+        <item>Create Account</item>
+        <item>Select Server</item>
+    </string-array>
+    
+    <string-array name="Options">
+        <item>About</item>
+        <item>Help</item>
+        <item>Exit</item>
+    </string-array>
+    
+</resources>

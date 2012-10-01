@@ -1,0 +1,46 @@
+package ad.model.ExpandableList;
+
+/**
+ * ExpListChild class
+ * 
+ * Has the state of a child in the expandable list.
+ * 
+ * @author Stefan
+ *
+ */
+public class ExpListChild {
+	// Initiates the child's instances
+    private String id;  	//(name)
+    private String label;  //(tag)
+
+    /**
+     * getId - Returns the id of the child.
+     * @return
+     */
+    public String getId() {  
+        return id;  
+    }  
+    /**
+     * setId - Sets the incoming String as the new child id.
+     * @param id
+     */
+    public void setId(String id) {  
+        this.id = id;  
+    }  
+    /**
+     * getLabel - Returns the child's label.
+     * @return
+     */
+   public String getLabel() {  
+       return label;  
+       
+   }  
+   /**
+    * setTag -
+    * @param Tag
+    */
+    public void setTag(String label) {  
+        this.label = label;  
+   }  
+	
+}

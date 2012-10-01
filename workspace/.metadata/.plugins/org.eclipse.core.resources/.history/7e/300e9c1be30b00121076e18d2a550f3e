@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="CTN">Connect To Server</string>
+    <string-array name="CTN">
+        <item>Login</item>
+        <item>Create Account</item>
+        <item>Select Server</item>
+    </string-array>
+    
+    <string-array name="Options">
+        <item>About</item>
+        <item>Help</item>
+        <item>Exit</item>
+    </string-array>
+    
+</resources>

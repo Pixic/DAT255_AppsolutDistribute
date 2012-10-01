@@ -11,6 +11,8 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
+        public static final int ExpChildBackground=0x7f050008;
+        public static final int ExpGroupBackground=0x7f050007;
         public static final int black=0x7f050000;
         public static final int blue=0x7f050002;
         public static final int green=0x7f050003;
@@ -24,21 +26,23 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int exitButton=0x7f080000;
-        public static final int mainExpandableListView=0x7f080001;
+        public static final int ExpList=0x7f080002;
+        public static final int menu_settings=0x7f080003;
+        public static final int tvChild=0x7f080000;
+        public static final int tvGroup=0x7f080001;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int explist_child=0x7f030000;
+        public static final int explist_group=0x7f030001;
+        public static final int main=0x7f030002;
     }
     public static final class menu {
-        public static final int activity_main=0x7f070000;
+        public static final int main=0x7f070000;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
-        public static final int connectToServer=0x7f040005;
-        public static final int main_no_items=0x7f040003;
+        public static final int connectToServer=0x7f040003;
         public static final int menu_settings=0x7f040001;
-        public static final int text_Exit=0x7f040004;
         public static final int title_activity_main=0x7f040002;
     }
     public static final class style {

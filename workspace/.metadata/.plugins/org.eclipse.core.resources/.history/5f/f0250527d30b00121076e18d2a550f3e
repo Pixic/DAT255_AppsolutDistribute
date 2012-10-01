@@ -1,0 +1,44 @@
+package ad.model.ExpandableList;
+
+import java.util.ArrayList;  
+/**
+ * ExpListGroup
+ * 
+ * @author Stefan Arvidsson
+ *
+ */
+public class ExpListGroup {  
+	// Initiates the group's instances
+     private String label;  						//name
+     private ArrayList<ExpListChild> content;   //items
+     /**
+      * getLabel - Returns the label of the group.  
+      * @return	String
+      */
+     public String getLabel() {  
+         return label;  
+     }  
+     /**
+      * setLabel - Sets the incoming String as the group's new label.
+      * @param label
+      */
+     public void setId(String label) {  
+         this.label = label;  
+     }  
+     /**
+      * getContent - Returns an ArrayList with the content.
+      * @return	ArrayList<ExpListChild>
+      */
+     public ArrayList<ExpListChild> getContent() {  
+         return content;  
+     }  
+     /**
+      * setContent - Sets the incoming ArrayList<ExpListChild> as the
+      * 			 groups's new content.
+      * @param content
+      */
+     public void setContent(ArrayList<ExpListChild> content) {  
+		this.content = content;  
+     }          
+
+} 
