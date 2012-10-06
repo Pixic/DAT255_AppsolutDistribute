@@ -1,8 +1,0 @@
-package ad.model.expList;
-
-import java.util.Observable;
-
-public class ExpListManager extends Observable {
-	
-	
-}

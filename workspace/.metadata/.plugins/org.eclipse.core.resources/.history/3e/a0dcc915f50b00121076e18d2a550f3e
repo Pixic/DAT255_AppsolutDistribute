@@ -1,7 +1,0 @@
-package ad.view.fragment;
-
-import android.app.
-
-public class Frag extends Fragment {
-
-}
